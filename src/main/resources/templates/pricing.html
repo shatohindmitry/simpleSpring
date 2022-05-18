@@ -1,0 +1,11 @@
+<th:block th:insert="fragments/fragments.html :: head"></th:block>
+<th:block th:insert="fragments/fragments.html :: nav2"></th:block>
+<h1>Пример страницы из фрагментов с другим навбаром</h1>
+<h1>Пример цикла th:each</h1>
+<ul>
+    <th:block th:each="flower : ${flowers}">
+        <li th:utext="${flower}">..</li>
+    </th:block>
+</ul>
+
+<th:block th:insert="fragments/fragments.html :: endpage"></th:block>

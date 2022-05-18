@@ -1,0 +1,14 @@
+<th:block th:insert="fragments/fragments.html :: head"></th:block>
+<th:block th:insert="fragments/fragments.html :: nav"></th:block>
+<h1>Пример страницы с кнопкой</h1>
+<div class="container mt-5">
+    <h1> Работа с кнопкой</h1>
+    <form action="/addbutton/press" method="post">
+        <input type="text" name="param1" placeholder="первый параметр" class="form-control"><br>
+        <input type="text" name="param2" placeholder="второй параметр" class="form-control"><br>
+        <input type="text" name="param3" placeholder="третий параметр" class="form-control"><br>
+        <button type="submit" class="btn btn-success">Press me</button>
+    </form>
+</div>
+
+<th:block th:insert="fragments/fragments.html :: endpage"></th:block>
